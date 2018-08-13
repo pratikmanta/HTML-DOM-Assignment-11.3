@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- added title -->
+    <title>Assignment 11.3 HTML DOM</title>
+    <script>
+
+        // function to show show attribute
+        function show() {
+            var google = document.getElementById("google");
+            var div = document.getElementById("attrs")
+            div.innerHTML = google;
+        }
+        
+        // function to remove attribute
+        function remove() {
+            var google = document.getElementById("google");
+            var div = document.getElementById("attrs");
+            div.innerHTML = " ";
+        }
+    </script>
+</head>
+    <body>
+        <a id="google" target="_self" href="https://www.w3resource.com/">google</a>
+        <div id="attrs"></div>
+        <button onclick="show()">Show Attributes Of link</button>
+        <button onclick="remove()">Remove Result</button>
+    </body>
+</html>
